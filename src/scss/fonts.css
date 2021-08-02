@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'TT Lakes Condensed Thin';
+    src: 
+    url('../fonts/TTLakesCondensed-ExtraLight.woff') format('woff'),
+    url('../fonts/TTLakesCondensed-ExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+         font-family: 'TT Lakes Bold';
+        src: 
+         url('../fonts/TTLakes-Bold.woff') format('woff'),
+         url('../fonts/TTLakes-Bold.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+         }

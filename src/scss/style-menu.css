@@ -1,0 +1,122 @@
+
+    .button{
+        background-color:  transparent;
+        border: 3px solid transparent;
+   }
+   .button:focus, .button:hover{
+        background-color:  transparent;
+        border-radius: -10px;
+        outline: none;
+        border-left:  4px solid #41F6D7;
+        color: #7E7E82;
+        cursor: pointer;
+        cursor:cell;
+   }
+   .main-menu__button-border:hover{
+    border: 3px solid transparent;
+    outline: none;
+    animation-name: optic;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+   }
+   .main-menu__button-border:focus  {
+    background-color:  transparent;
+    border-radius: 6px;
+    outline: none;
+    border:  3px solid #41F6D7;
+
+   }
+   body{
+    font-family: 'TT Lakes Condensed Thin';
+}
+
+@keyframes dvig{
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes min{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-120%);
+    }
+}
+.no-show{
+    animation-name: min;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+.show{
+    animation-name: dvig;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    min-width: 320px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    transform: translateX(-120%);
+    z-index: 3;
+}
+.main-menu{
+    position: relative;
+    max-width: 320px;
+    height: 100%;
+    box-shadow: 50px 0 20px #F8F8F8;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.main-menu__header{ 
+    max-width: 320px;
+    min-height: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-menu__column{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;  
+}
+.main-menu__list{
+    padding: 0;
+    margin: 0;
+}
+.main-menu__item{
+    list-style: none;
+    margin-top: 15px;
+}
+ ul .main-menu__button{
+     display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 15px;
+    border: 4px solid transparent;
+}
+.mein-menu__lang .button{
+    font-size: 16px;
+}
+.mein-menu__lang {
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+@keyframes optic{
+    to{
+        filter: saturate(50%);
+    }
+}

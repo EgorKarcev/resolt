@@ -1,0 +1,223 @@
+.money__list , .money__spisok{
+        list-style: none;
+        padding: 10px;
+        padding-top: 0;
+        margin: 0;
+}
+.money__list a, .money__spisok a{
+    padding-left: 20px;
+    text-decoration: none;
+    line-height: 5px;
+    color: black;
+    font-weight: bold;
+}
+.money__text-grow{
+    color: #7E7E82;
+}
+.money__butt:focus,  .money__butt:hover, .money__button:hover, .money__butt:focus{
+    outline: none;
+    border: 3px solid #41F6D7;
+    border-radius: 6px;
+    cursor: pointer;
+    cursor:grab;
+   }
+.money__butt{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 72px;
+    background-color: white;
+    width: 240px;
+    height: 200px;
+    border-radius: 6px;
+    border: 3px solid transparent;
+}
+.money__text{
+   padding-left: 10px;
+    padding: 5px;
+    
+}
+.money__text p{
+    margin: 0;
+    line-height: 18px;
+    
+ 
+}
+.money__bott{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
+.money__bott img{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 320px){
+    .money__spisok{
+        display: none;
+    }
+    .money{
+        min-width: 320px;
+        min-height: 250px;
+        padding: 0;
+        margin: 0;   
+   }
+
+.money__title{
+    min-width: 320px;
+    height: 80px;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    color:#7E7E82 ;
+    line-height: 24px;
+    padding-left: 20px;
+    margin: 0;
+    padding-top: 15px;
+}
+.money__content{
+    max-width: 320px;
+    min-height: 270px;
+    background-color: #F8F8F8;
+}
+.money__adress{
+    padding-left: 30%;
+}
+}
+
+@media screen and (min-width: 768px){
+    .money__spisok{
+        display: block;
+    }
+    .money{
+        min-width: 768px;
+        min-height: 250px;
+        padding: 0;
+        margin: 0;   
+   }
+
+.money__title{
+    min-width: 768px;
+    height: 80px;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    color:#7E7E82 ;
+    line-height: 24px;
+    padding-left: 20px;
+    margin: 0;
+    padding-top: 15px;
+}
+.money__content{
+    max-width: 768px;
+    min-height: 270px;
+    background-color: #F8F8F8;
+}
+.money__adress{
+    font-display: none;
+    padding-left: 30%;
+}
+.money__nav{
+    display: none;
+}
+ .money__box{
+     width: 750px;
+     padding: 0 0 5px 0;
+     background-color: white;
+     border-radius: 6px;
+ }
+ .money__box li:nth-child(1){
+     border:2px solid white ;
+ }
+ .money__box li{
+     padding: 5px 0 5px 0;
+     border-top: 2px solid #EAEAEA;
+     margin: 0 10px 0 10px;
+ }
+ .money__box li a {
+     display: flex;
+    
+ }
+ .money__box li a span{
+    margin: 0;
+    line-height: 18px;
+    flex-basis: 0;
+    flex-grow: 1;
+ }
+ .money__info{
+    margin: 0 10px 0 10px;
+    padding: 5px 0 5px 0;
+
+ }
+ .money__info span{
+ padding-right: 15%;
+
+ }
+}
+@media screen and (min-width: 1120px){
+    .money__spisok{
+        display: block;
+    }
+    .money{
+        min-width: 1120px;
+        min-height: 250px;
+        padding: 0;
+        margin: 0;   
+   }
+
+.money__title{
+    min-width: 1120px;
+    height: 80px;
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    color:#7E7E82 ;
+    line-height: 24px;
+    padding-left: 20px;
+    margin: 0;
+    padding-top: 15px;
+}
+.money__content{
+    max-width: 1120px;
+    min-height: 270px;
+    background-color: #F8F8F8;
+}
+.money__adress{
+    font-display: none;
+    padding-left: 30%;
+}
+.money__nav{
+    display: none;
+}
+ .money__box{
+     width: 1100px;
+     padding: 0 0 5px 0;
+     background-color: white;
+     border-radius: 6px;
+ }
+ .money__box li:nth-child(1){
+     border:2px solid white ;
+ }
+ .money__box li{
+     padding: 5px 0 5px 0;
+     border-top: 2px solid #EAEAEA;
+     margin: 0 10px 0 10px;
+ }
+ .money__box li a {
+     display: flex;
+    
+ }
+ .money__box li a span{
+    margin: 0;
+    line-height: 18px;
+    flex-basis: 0;
+    flex-grow: 1;
+ }
+ .money__info{
+    margin: 0 10px 0 10px;
+    padding: 5px 0 5px 0;
+
+ }
+ .money__info span{
+ padding-right: 20%;
+
+ }
+}

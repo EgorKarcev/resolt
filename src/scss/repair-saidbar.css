@@ -1,0 +1,114 @@
+.repair-saidbar__text span{
+    color: red;
+}
+.repair-saidbar__text{
+    text-align: left;
+    padding-left: 15px;
+}
+.repair-saidbar__button{
+    background-color:  transparent;
+    border: 3px solid transparent;
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.repair-saidbar__next{
+    margin-left: 50%;
+    margin-top: 10px;
+
+}
+.repair-saidbar__button:hover, .repair-saidbar__button:focus{
+    outline: none;
+    border-radius: 6px;
+    border: 3px solid #41F6D7;
+    cursor: pointer;
+    cursor: cell;
+}
+.repair-saidbar__title{
+    font-family: 'TT Lakes Bold';
+    border-left: 4px solid #41F6D7;
+    padding-left: 12px;
+}
+.repair-saidbar__form{
+    padding-left: 10px;
+}
+.repair-saidbar__inp{
+    width:280px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    border-radius: 6px;
+    margin-top: 5px ;
+    border: 1px solid #EAEAEA;
+}
+@media screen and (min-width: 320px){
+.repair-saidbar{
+    position: absolute;
+    top: 0;
+    right:  0;
+    background-color: white;
+    max-width: 320px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0;
+    display: none;
+    z-index: 2;
+}
+.repair-saidbar__column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+@media screen and (min-width: 340px){
+    .repair-saidbar{
+        position: absolute;
+        top: 0;
+        right:  0;
+        background-color: white;
+        width: 320px;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        opacity: 0;
+        display: none;
+        z-index: 3;
+       
+    }
+    .repair-saidbar__column{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: -61px;
+    }    
+}
+.opt{
+    display: block;
+    animation-name: opt;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.opt-too{
+    display: none;
+    animation-name: opt-too;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes opt{
+    
+    to{
+        opacity: 1;
+        display: block;
+    }
+}
+@keyframes opt-too{
+    from{
+        display: block;
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        display: none;
+    }
+}

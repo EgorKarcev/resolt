@@ -1,0 +1,115 @@
+.call-saidbar__text span{
+    color: red;
+}
+.call-saidbar__text{
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.call-saidbar__button{
+    background-color:  transparent;
+    border: 3px solid transparent;
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.call-saidbar__next{
+    margin-left: 50%;
+    margin-top: 10px;
+
+}
+.call-saidbar__button:hover, .call-saidbar__button:focus{
+    outline: none;
+    border-radius: 6px;
+    border: 3px solid #41F6D7;
+    cursor: pointer;
+    cursor: cell;
+}
+.call-saidbar__title{
+    font-family: 'TT Lakes Bold';
+    border-left: 4px solid #41F6D7;
+    padding-left: 12px;
+}
+.call-saidbar__form{
+    padding-left: 10px;
+}
+.call-saidbar__inp{
+    width:280px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    border-radius: 6px;
+    margin-top: 5px ;
+    border: 1px solid #EAEAEA;
+}
+@media screen and (min-width: 320px){
+
+.call-saidbar{
+    position: absolute;
+    top: 0;
+    right:  0;
+    background-color: white;
+    width: 320px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+    opacity: 0;
+    z-index: 2;
+}
+.call-saidbar__column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+@media screen and (min-width: 340px){
+    .call-saidbar{
+        position: absolute;
+        top: 0;
+        right:  0;
+        background-color: white;
+        width: 340px;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        display: none;
+        opacity: 0;
+        z-index: 3;
+    }
+    .call-saidbar__column{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: -61px;
+    }    
+}
+.opt{
+    display: block;
+    animation-name: opt;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.opt-too{
+    display: none;
+    animation-name: opt-too;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes opt{
+    
+    to{
+        opacity: 1;
+        display: block;
+    }
+}
+@keyframes opt-too{
+    from{
+        display: block;
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        display: none;
+    }
+}

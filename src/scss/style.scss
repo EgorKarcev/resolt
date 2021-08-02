@@ -1,0 +1,62 @@
+
+@import url('style.css');
+@import '/node_modules/swiper/swiper-bundle.css';
+@import url('style-tex.css');
+@import url('repair-name.css');
+@import url('money.css');
+@import url('info.css');
+@import url('fonts.css');
+@import url('footer.css');
+@import url('style-menu.css');
+@import url('repair-saidbar.css');
+@import url('call.css');
+body {
+  font-family: 'TT Lakes Condensed Thin';
+  padding: 0px;
+  margin: 0px;
+}
+@media screen and (min-width: 1120px) {
+  body{
+    width: 1120px;
+   margin: 0 auto;
+}
+}
+@media screen and (min-width:768px) {
+  body{
+    width: 768px;
+   margin: 0 auto;
+}
+}
+@media screen and (min-width:320px) {
+  body{
+    width: 320px;
+   margin: 0 auto;
+}
+}
+.set-too{
+
+    animation-name: bl-too;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+.set{
+  animation-name: bl;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes bl{
+  to{
+      filter: blur(30px);
+  }
+}
+@keyframes bl-too{
+  from{
+    filter: blur(30px);
+  }
+  to{
+      filter: blur(0px);
+  }
+}
+
+
